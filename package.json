@@ -10,11 +10,9 @@
     "test": "npm run test:all",
     "test:all": "npm run test:unit",
     "test:unit": "cross-env NODE_PATH=. NODE_ENV=test mocha --opts test/mocha.opts.unit",
-    "coverage": "cross-env NODE_PATH=. NODE_ENV=test nyc mocha --opts test/mocha.opts.unit",
     "lint": "eslint {src,test,config}/**/*.js",
     "sequelize": "cross-env NODE_PATH=. sequelize",
     "pm2": "pm2",
-    "cleanup": "node scripts/cleanup.js"
   },
   "repository": {},
   "author": "ngoc pham bao",
