@@ -44,7 +44,7 @@ unit test: npm run test:all
 
 How to start:  
 1) We can start project by npm cmd:
-    - Setup the database on config/database.js (there's an example file there to be used with PostgreSQL 😉 )
+    - Setup the database on config/database.js (there's an example file there to be used with Mysql)
     - Install the dependencies with yarn or npm install
     - Create the development and test databases you have setup on config/database.js
     - Run the database migrations with npm run sequelize db:migrate
