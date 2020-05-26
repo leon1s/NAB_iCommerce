@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  nab_ecommerce:
+    build: .
+    working_dir: /usr/src/app
+    command: npm run dev
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+volumes:
+  db-data: # named volumes can be managed easier using docker-compose
