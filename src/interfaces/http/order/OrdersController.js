@@ -10,16 +10,10 @@ const OrdersController = {
 
 
     router.post('/', inject('createOrder'), this.create);
-    // router.put('/:id', inject('updateProduct'), this.update);
-    // router.delete('/:id', inject('deleteProduct'), this.delete);
-    // router.get('/', inject('getAllProducts'), this.index);
-    // router.get('/search', inject('searchAllProducts'), this.search);
-    // router.get('/:id', inject('getProduct'), this.show);
     return router;
   },
 
   create(req, res, next) {
-    console.log('here')
     const { createOrder, ordersSerializer } = req;
     const { SUCCESS, ERROR, VALIDATION_ERROR } = createOrder.outputs;
 
